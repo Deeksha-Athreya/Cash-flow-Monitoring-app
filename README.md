@@ -1,4 +1,4 @@
-# Cash Settlement Algorithm Implementation
+# Cashflow minimization 
 ## Algorithm Implemented
 
 This program implements a cash settlement algorithm using a Greedy approach to minimize the total cash flow among a group of friends who owe money to each other. The algorithm works as follows:
