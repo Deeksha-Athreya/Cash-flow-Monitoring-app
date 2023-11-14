@@ -65,7 +65,7 @@ void settleAmounts(struct Person* persons, char** names, int n) {
             // Print the transaction
             printf("%s owes %d to %s\n", names[debtorIndex], minAmount, names[creditorIndex]);
         } else {
-            
+            // If no valid transaction can be performed, exit the loop
             break;
         }
     }
@@ -92,7 +92,7 @@ int main() {
     printf("\nSettlements:\n");
     settleAmounts(persons, names, n);
 
-    
+    // Free allocated memory
     for (int i = 0; i < n; i++) {
         free(names[i]);
         free(persons[i].debts);
