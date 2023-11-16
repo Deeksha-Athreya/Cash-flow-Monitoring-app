@@ -1,2 +1,2 @@
-# Codes
-some stuff i tried 🪴
+# Codes 🪴
+some stuff i tried 
