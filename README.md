@@ -1,2 +1,2 @@
-# DSA_Codes
-some codes i tried 🪴
+# Codes
+some stuff i tried 🪴
