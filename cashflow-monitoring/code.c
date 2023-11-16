@@ -83,9 +83,13 @@ void addNewPerson(struct Person** persons, char*** names, int* n) {
         printf("Enter the amount owed by %s to %s: ", (*names)[i], (*names)[*n - 1]);
         scanf("%d", &((*persons)[i].debts[*n - 1]));
         (*persons)[i].amount += (*persons)[i].debts[*n - 1];
-        (*persons)[*n - 1].debts[i] = 0;
+
+        printf("Enter the amount owed by %s to %s: ", (*names)[*n - 1], (*names)[i]);
+        scanf("%d", &((*persons)[*n - 1].debts[i]));
+        (*persons)[*n - 1].amount -= (*persons)[*n - 1].debts[i];
     }
 }
+
 
 int main() {
     int n;
